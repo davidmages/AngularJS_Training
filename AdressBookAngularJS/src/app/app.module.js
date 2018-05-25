@@ -8,7 +8,7 @@ import TodoModuleName from './todo/todo.module';
 const AppModule = angular.module('app.module',[
   SharedModuleName,
   ContactModuleName,
-  TodoModuleName
+  TodoModuleName,
 ]);
 
 

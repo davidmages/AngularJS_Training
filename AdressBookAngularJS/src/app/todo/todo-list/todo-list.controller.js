@@ -6,7 +6,7 @@ class TodoListCtrl {
   constructor($http, $scope) {
     //console.log('TodoListCtrl');
     $scope.todos = [];
-    $http.get('https://jsonplaceholder.typicode.com/todos')
+    $http.get('http://localhost:3000')
       .then((res) => {
         //console.log(res.data);
         $scope.todos = res.data;
