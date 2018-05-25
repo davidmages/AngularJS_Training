@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    Prénom : <input class="saisie">
+  </div>
+  <p>
+      Bonjour <span class="sortie"></span> !
+  </p>
+  <script>
+    //document.body
+    //document.documentElement.lastElementChild
+    //Module IIFE 
+    (function(){
+      'use strict';
+
+      var inputElt = document.querySelector('.saisie');
+      var spanElt = document.querySelector('.sortie');
+      inputElt.value = 'romain'
+      inputElt.addEventListener('input', function() {
+        spanElt.innerText = inputElt.value;
+      });
+    }());
+  </script>
+</body>
+</html>
